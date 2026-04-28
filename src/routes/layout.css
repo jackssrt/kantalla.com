@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 @theme {
 	--font-sans: 'Caveat Brush', 'sans-serif';
-	--animate-fade-in: fade-in 500ms ease-in-out forwards;
+	--animate-fade-in: fade-in 450ms var(--default-transition-timing-function) forwards;
 	@keyframes fade-in {
 		from {
 			opacity: 0;
@@ -10,13 +10,23 @@
 			opacity: 100;
 		}
 	}
-	--animate-fade-in-backdrop: fade-in-backdrop 500ms ease-in-out forwards;
+	--animate-fade-in-backdrop: fade-in-backdrop 450ms var(--default-transition-timing-function)
+		forwards;
 	@keyframes fade-in-backdrop {
 		from {
 			backdrop-filter: none;
 		}
 		to {
 			backdrop-filter: blur(var(--blur-2xl));
+		}
+	}
+	--animate-slide-in: slide-in 450ms var(--default-transition-timing-function);
+	@keyframes slide-in {
+		from {
+			transform: translateY(100%);
+		}
+		to {
+			transform: var(--tw-translate-y);
 		}
 	}
 }
