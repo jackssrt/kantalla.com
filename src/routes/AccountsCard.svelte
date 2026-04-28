@@ -12,7 +12,7 @@
 
 <Card>
 	<h2 class="text-center text-xl font-bold">My profiles ^-^</h2>
-	<div class="flex gap-1">
+	<div class="flex flex-wrap justify-center gap-1">
 		<Account href="https://quavergame.com/user/345922">
 			<QuaverIcon class="scale-90"></QuaverIcon>
 		</Account>
