@@ -1,4 +1,22 @@
 @import 'tailwindcss';
 @theme {
 	--font-sans: 'Caveat Brush', 'sans-serif';
+	--animate-fade-in: fade-in 500ms ease-in-out forwards;
+	@keyframes fade-in {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 100;
+		}
+	}
+	--animate-fade-in-backdrop: fade-in-backdrop 500ms ease-in-out forwards;
+	@keyframes fade-in-backdrop {
+		from {
+			backdrop-filter: none;
+		}
+		to {
+			backdrop-filter: blur(var(--blur-2xl));
+		}
+	}
 }
