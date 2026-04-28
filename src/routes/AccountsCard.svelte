@@ -5,7 +5,7 @@
 	import YoutubeIcon from '@iconify-svelte/mdi/youtube';
 	import TwitchIcon from '@iconify-svelte/mdi/twitch';
 	import OsuIcon from '@iconify-svelte/simple-icons/osu';
-	import quaverIcon from '$lib/assets/quaver.png';
+	import QuaverIcon from '$lib/assets/quaver.svg?component';
 	import Account from './Account.svelte';
 	import Card from '$lib/components/Card.svelte';
 </script>
@@ -14,7 +14,7 @@
 	<h2 class="text-center text-xl font-bold">My profiles ^-^</h2>
 	<div class="flex gap-1">
 		<Account href="https://quavergame.com/user/345922">
-			<img src={quaverIcon} alt="quaver logo" />
+			<QuaverIcon class="scale-90"></QuaverIcon>
 		</Account>
 		<!-- this is evil i know but the osu logo is bigger than the others and it looks off -->
 		<Account href="https://osu.ppy.sh/users/32000382"><OsuIcon class="scale-85"></OsuIcon></Account>

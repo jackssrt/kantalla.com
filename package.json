@@ -40,6 +40,7 @@
 		"@iconify-svelte/ic": "^1.0.2",
 		"@iconify-svelte/mdi": "^1.0.0",
 		"@iconify-svelte/simple-icons": "^1.0.27",
+		"@poppanator/sveltekit-svg": "^7.0.0",
 		"@sveltejs/adapter-static": "^3.0.10"
 	}
 }
