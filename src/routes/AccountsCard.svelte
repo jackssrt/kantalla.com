@@ -6,6 +6,7 @@
 	import TwitchIcon from '@iconify-svelte/mdi/twitch';
 	import OsuIcon from '@iconify-svelte/simple-icons/osu';
 	import QuaverIcon from '$lib/assets/quaver.svg?component';
+	import DiscordIcon from '@iconify-svelte/ic/baseline-discord';
 	import Account from './Account.svelte';
 	import Card from '$lib/components/Card.svelte';
 </script>
@@ -17,11 +18,26 @@
 			<QuaverIcon class="scale-90"></QuaverIcon>
 		</Account>
 		<!-- this is evil i know but the osu logo is bigger than the others and it looks off -->
-		<Account href="https://osu.ppy.sh/users/32000382"><OsuIcon class="scale-85"></OsuIcon></Account>
-		<Account href="https://steamcommunity.com/id/kantalla"><SteamIcon></SteamIcon></Account>
-		<Account href="https://x.com/kantallaa"><TwitterIcon></TwitterIcon></Account>
-		<Account href="https://www.tiktok.com/@kantalla"><TiktokIcon></TiktokIcon></Account>
-		<Account href="https://www.youtube.com/@kantalla"><YoutubeIcon></YoutubeIcon></Account>
-		<Account href="https://www.twitch.tv/kantallaa"><TwitchIcon></TwitchIcon></Account>
+		<Account href="https://osu.ppy.sh/users/32000382">
+			<OsuIcon class="scale-85"></OsuIcon>
+		</Account>
+		<Account href="https://steamcommunity.com/id/kantalla">
+			<SteamIcon></SteamIcon>
+		</Account>
+		<Account href="https://www.discord.com/users/452136399173582860">
+			<DiscordIcon></DiscordIcon>
+		</Account>
+		<Account href="https://x.com/kantallaa">
+			<TwitterIcon></TwitterIcon>
+		</Account>
+		<Account href="https://www.tiktok.com/@kantalla">
+			<TiktokIcon></TiktokIcon>
+		</Account>
+		<Account href="https://www.youtube.com/@kantalla">
+			<YoutubeIcon></YoutubeIcon>
+		</Account>
+		<Account href="https://www.twitch.tv/kantallaa">
+			<TwitchIcon></TwitchIcon>
+		</Account>
 	</div>
 </Card>
