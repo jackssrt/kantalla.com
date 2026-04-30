@@ -13,5 +13,7 @@
 	The Quaver logo is licensed under <ExternalLink
 		href="https://creativecommons.org/licenses/by-nc/4.0/legalcode">CC BY-NC 4.0</ExternalLink
 	><br />
-	Other logos are property of their respective trademark holders
+	Other logos are property of their respective trademark holders <br />Sound effects by <ExternalLink
+		href="https://pixabay.com/users/floraphonic-38928062/">floraphonic</ExternalLink
+	> from <ExternalLink href="https://pixabay.com//">Pixabay</ExternalLink>
 </p>
