@@ -1,7 +1,7 @@
 <script lang="ts">
 	import SteamIcon from '@iconify-svelte/mdi/steam';
 	import TwitterIcon from '@iconify-svelte/mdi/twitter';
-	import TiktokIcon from '@iconify-svelte/ic/sharp-tiktok';
+	import SoundCloudIcon from '@iconify-svelte/simple-icons/soundcloud';
 	import YoutubeIcon from '@iconify-svelte/mdi/youtube';
 	import TwitchIcon from '@iconify-svelte/mdi/twitch';
 	import OsuIcon from '@iconify-svelte/simple-icons/osu';
@@ -30,8 +30,8 @@
 		<Account href="https://x.com/kantallaa">
 			<TwitterIcon></TwitterIcon>
 		</Account>
-		<Account href="https://www.tiktok.com/@kantalla">
-			<TiktokIcon></TiktokIcon>
+		<Account href="https://soundcloud.com/kantallaa">
+			<SoundCloudIcon></SoundCloudIcon>
 		</Account>
 		<Account href="https://www.youtube.com/@kantalla">
 			<YoutubeIcon></YoutubeIcon>
