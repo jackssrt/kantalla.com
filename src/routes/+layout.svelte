@@ -23,7 +23,7 @@ Mainly playing games or yapping :D"
 I help however I can :3
 Mainly playing games or yapping :D"
 	/>
-	<meta name="og:image" content="https://kantalla.com/avatar.webp" />
+	<meta name="og:image" content={avatar} />
 	<meta name="keywords" content="Femboy" />
 	<meta name="author" content="Kantalla" />
 	<link rel="canonical" href="https://kantalla.com" />
