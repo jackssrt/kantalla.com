@@ -7,7 +7,7 @@
 >
 	<p class="group">
 		<ExternalLink href="https://github.com/jackssrt/kantalla.com">Open source</ExternalLink>, <ExternalLink
-			href="https://github.com/jackssrt/kantalla.com/LICENSE">copyleft GPLv3</ExternalLink
+			href="https://github.com/jackssrt/kantalla.com/blob/main/LICENSE">copyleft GPLv3</ExternalLink
 		>, made with <span class="group-hover:text-purple-400">love</span> by <ExternalLink
 			href="https://jackssrt.com">jackssrt</ExternalLink
 		> :3<br />
