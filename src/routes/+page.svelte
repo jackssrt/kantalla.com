@@ -8,12 +8,12 @@
 
 <div class="mx-2 grid min-h-dvh place-items-center">
 	<div class="mt-8 mb-24 flex flex-col items-center gap-8">
-		<ProfilePicture></ProfilePicture>
+		<ProfilePicture />
 		<div class="flex flex-col items-center gap-2">
-			<ProfileCard></ProfileCard>
-			<AccountsCard></AccountsCard>
-			<Credits></Credits>
+			<ProfileCard />
+			<AccountsCard />
+			<Credits />
 		</div>
 	</div>
-	<Silly></Silly>
+	<Silly />
 </div>

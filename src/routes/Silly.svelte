@@ -20,9 +20,9 @@
 		// i miss rusttt i wanna use an if statement as an expression here :(
 		const audio = [audio1, audio2][Math.floor(Math.random() * 2)];
 		audio.currentTime = 0;
-		audio.play();
+		void audio.play();
 		counter.style.opacity = "100%";
-		hideCounter();
+		void hideCounter();
 	}}
 	class="fixed right-0 bottom-0 w-32 animate-slide-in transition-transform select-none xl:right-4 xl:translate-y-1/3 xl:hover:translate-y-0"
 >

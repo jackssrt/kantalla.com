@@ -3,8 +3,9 @@
 	import "./layout.css";
 	import background from "$lib/assets/kantallabanner.png";
 	import avatar from "$lib/assets/avatar.webp";
+	import type { Snippet } from "svelte";
 
-	let { children } = $props();
+	let { children }: { children: Snippet } = $props();
 </script>
 
 <svelte:head>
