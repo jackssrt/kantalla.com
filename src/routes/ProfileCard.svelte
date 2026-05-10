@@ -1,6 +1,6 @@
 <script>
-	import Card from '$lib/components/Card.svelte';
-	import ExternalLink from '$lib/components/ExternalLink.svelte';
+	import Card from "$lib/components/Card.svelte";
+	import ExternalLink from "$lib/components/ExternalLink.svelte";
 </script>
 
 <Card>

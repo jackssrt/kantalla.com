@@ -1,8 +1,8 @@
 <script lang="ts">
-	import '@fontsource/caveat-brush';
-	import './layout.css';
-	import background from '$lib/assets/kantallabanner.png';
-	import avatar from '$lib/assets/avatar.webp';
+	import "@fontsource/caveat-brush";
+	import "./layout.css";
+	import background from "$lib/assets/kantallabanner.png";
+	import avatar from "$lib/assets/avatar.webp";
 
 	let { children } = $props();
 </script>

@@ -1,6 +1,6 @@
 <script lang="ts">
-	import avatar from '$lib/assets/avatar.webp';
-	import Heart from '$lib/assets/heart.svg?component';
+	import avatar from "$lib/assets/avatar.webp";
+	import Heart from "$lib/assets/heart.svg?component";
 </script>
 
 <div class="relative animate-fade-in">

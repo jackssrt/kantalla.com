@@ -1,14 +1,14 @@
 <script lang="ts">
-	import SteamIcon from '@iconify-svelte/mdi/steam';
-	import TwitterIcon from '@iconify-svelte/mdi/twitter';
-	import SoundCloudIcon from '@iconify-svelte/simple-icons/soundcloud';
-	import YoutubeIcon from '@iconify-svelte/mdi/youtube';
-	import TwitchIcon from '@iconify-svelte/mdi/twitch';
-	import OsuIcon from '@iconify-svelte/simple-icons/osu';
-	import QuaverIcon from '$lib/assets/quaver.svg?component';
-	import DiscordIcon from '@iconify-svelte/ic/baseline-discord';
-	import Account from './Account.svelte';
-	import Card from '$lib/components/Card.svelte';
+	import SteamIcon from "@iconify-svelte/mdi/steam";
+	import TwitterIcon from "@iconify-svelte/mdi/twitter";
+	import SoundCloudIcon from "@iconify-svelte/simple-icons/soundcloud";
+	import YoutubeIcon from "@iconify-svelte/mdi/youtube";
+	import TwitchIcon from "@iconify-svelte/mdi/twitch";
+	import OsuIcon from "@iconify-svelte/simple-icons/osu";
+	import QuaverIcon from "$lib/assets/quaver.svg?component";
+	import DiscordIcon from "@iconify-svelte/ic/baseline-discord";
+	import Account from "./Account.svelte";
+	import Card from "$lib/components/Card.svelte";
 </script>
 
 <Card>

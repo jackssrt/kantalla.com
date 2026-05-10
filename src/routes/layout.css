@@ -1,6 +1,6 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 @theme {
-	--font-sans: 'Caveat Brush', 'sans-serif';
+	--font-sans: "Caveat Brush", "sans-serif";
 	--animate-fade-in: fade-in 450ms var(--default-transition-timing-function) forwards;
 	@keyframes fade-in {
 		from {
