@@ -7,7 +7,7 @@
 			opacity: 0;
 		}
 		to {
-			opacity: 100;
+			opacity: 1;
 		}
 	}
 	--animate-fade-in-backdrop: fade-in-backdrop 450ms var(--default-transition-timing-function)
