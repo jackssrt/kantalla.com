@@ -4,7 +4,13 @@
 </script>
 
 <Card>
-	<h1 class="text-8xl font-bold">Kantalla</h1>
+	<h1 class="text-8xl font-bold">
+		{#each "Kantalla".split("") as letter, i (i)}
+			<span class="inline-block animate-fade-in opacity-0" style="animation-delay: {i * 100}ms"
+				>{letter}</span
+			>
+		{/each}
+	</h1>
 	<div class="flex gap-2 text-xl">
 		<ExternalLink href="https://quavergame.com/team">Moderator @quaver</ExternalLink>
 
