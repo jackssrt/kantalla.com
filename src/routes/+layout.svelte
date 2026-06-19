@@ -1,8 +1,7 @@
 <script lang="ts">
 	import "@fontsource/caveat-brush";
 	import "./layout.css";
-	import background from "$lib/assets/kantallabanner.png";
-	import avatar from "$lib/assets/avatar.webp";
+	import avatar from "$lib/assets/avatar.png";
 	import type { Snippet } from "svelte";
 
 	let { children }: { children: Snippet } = $props();
@@ -32,5 +31,9 @@ Mainly playing games or yapping :D"
 	<meta name="og:type" content="website" />
 	<meta name="theme-color" content="#f472b6" />
 </svelte:head>
-<img src={background} class="fixed -z-10 h-dvh w-dvw object-cover blur-sm" alt="background" />
+<enhanced:img
+	src="$lib/assets/kantallabanner.png"
+	class="fixed -z-10 h-dvh w-dvw object-cover"
+	alt="background"
+></enhanced:img>
 {@render children()}

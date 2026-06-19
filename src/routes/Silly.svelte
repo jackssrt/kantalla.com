@@ -1,5 +1,4 @@
 <script lang="ts">
-	import image from "$lib/assets/dbdemoteheart.png";
 	import boop1 from "$lib/assets/boop1.mp3";
 	import boop2 from "$lib/assets/boop2.mp3";
 	import { PersistedState, useDebounce } from "runed";
@@ -31,5 +30,9 @@
 	<span class="text-4xl transition-opacity" style="opacity: 0%;" bind:this={counter}
 		>{count.current}</span
 	>
-	<img src={image} class="h-auto w-full select-none" alt="custom heart emoji" />
+	<enhanced:img
+		src="$lib/assets/dbdemoteheart.png"
+		class="h-auto w-full select-none"
+		alt="custom heart emoji"
+	></enhanced:img>
 </button>

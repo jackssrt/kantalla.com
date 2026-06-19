@@ -42,6 +42,7 @@
 		"@iconify-svelte/simple-icons": "^1.0.27",
 		"@poppanator/sveltekit-svg": "^7.0.0",
 		"@sveltejs/adapter-static": "^3.0.10",
+		"@sveltejs/enhanced-img": "^0.11.0",
 		"runed": "^0.37.1"
 	}
 }
