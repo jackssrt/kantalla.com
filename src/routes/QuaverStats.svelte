@@ -100,8 +100,6 @@
 				data = json;
 			});
 	});
-
-	let is4Keys = $state(true);
 </script>
 
 {#snippet field(field: string, value: string)}
@@ -112,35 +110,12 @@
 {/snippet}
 
 <Card>
-	<h2 class="flex w-full justify-between text-xl">
-		Quaver stats :3
-
-		<div class="flex items-center gap-1">
-			<label for="7k-toggle">{is4Keys ? "4K" : "7K"}</label>
-			<button
-				id="7k-toggle"
-				type="button"
-				aria-label="Toggle between 4 keys and 7 keys stats"
-				class="relative h-4 w-8 rounded bg-white/50"
-				onclick={() => {
-					is4Keys = !is4Keys;
-				}}
-			>
-				<div
-					class={[
-						"absolute top-0 h-4 w-4 rounded bg-white transition-all",
-						is4Keys ? "left-0" : "left-4"
-					]}
-				></div>
-			</button>
-		</div>
-	</h2>
 	{#if data === undefined}
 		Loading...
 	{:else}
-		{@const stats = is4Keys ? data.user.stats_keys4 : data.user.stats_keys7}
+		{@const stats = data.user.stats_keys4}
 		{@const [iconColor, content] = match(data.user.client_status)
-			.with(null, () => ["bg-gray-500", "Offline"])
+			.with(null, () => ["bg-purple-100/50", "Offline"])
 			.with({ status: STATUSES.playing, content: P.select() }, (content) => [
 				"bg-green-500",
 				`Playing ${content}`
@@ -149,19 +124,26 @@
 				"bg-yellow-500",
 				`Editing ${content}`
 			])
-			.with({ status: STATUSES.pickingSong }, () => ["bg-blue-500", "Picking a song"])
-			.with({ status: STATUSES.paused }, () => ["bg-green-500", "Paused"])
-			.with({ status: STATUSES.menu }, () => ["bg-green-500", "In the menu"])
-			.with({ status: STATUSES.multiplayerMenu }, () => ["bg-green-500", "In the multiplayer menu"])
-			.with({ status: STATUSES.multiplayerLobby }, () => ["bg-green-500", "In a multiplayer lobby"])
-			.otherwise(() => ["bg-gray-500", "Unknown status"])}
-		<div>
-			<div class="flex items-center gap-2">
-				<div class={["h-3 w-3 rounded", iconColor]}></div>
+			.with({ status: STATUSES.pickingSong }, () => ["bg-purple-500", "Picking a song"])
+			.with({ status: STATUSES.paused }, () => ["bg-purple-500", "Paused"])
+			.with({ status: STATUSES.menu }, () => ["bg-purple-500", "In the menu"])
+			.with({ status: STATUSES.multiplayerMenu }, () => [
+				"bg-purple-500",
+				"In the multiplayer menu"
+			])
+			.with({ status: STATUSES.multiplayerLobby }, () => [
+				"bg-purple-500",
+				"In a multiplayer lobby"
+			])
+			.otherwise(() => ["bg-purple-100/50", "Unknown status"])}
+		<h2 class="flex w-full justify-between text-xl">
+			Quaver stats :3
+			<div class="flex items-center gap-2 self-end">
 				<div>{content}</div>
+				<div class={["h-4 w-4 rounded", iconColor]}></div>
 			</div>
-		</div>
-		<div class="grid grid-cols-2">
+		</h2>
+		<div class="grid grid-cols-3">
 			<!-- eslint-disable @typescript-eslint/no-confusing-void-expression -->
 			{@render field("Global rank", formatRank(stats.ranks.global))}
 			{@render field("Country rank", formatRank(stats.ranks.country))}
