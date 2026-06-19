@@ -8,7 +8,7 @@
 </script>
 
 <div class="mx-2 grid min-h-dvh place-items-center">
-	<div class="mt-8 mb-24 flex flex-col items-center gap-8">
+	<div class="mt-8 mb-24 flex flex-col items-center gap-8 xl:mb-2">
 		<ProfilePicture />
 		<div class="flex flex-col items-center gap-2">
 			<ProfileCard />
