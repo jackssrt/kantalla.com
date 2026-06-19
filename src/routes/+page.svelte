@@ -4,6 +4,7 @@
 	import ProfilePicture from "./ProfilePicture.svelte";
 	import Silly from "./Silly.svelte";
 	import Credits from "./Credits.svelte";
+	import QuaverStats from "./QuaverStats.svelte";
 </script>
 
 <div class="mx-2 grid min-h-dvh place-items-center">
@@ -11,6 +12,7 @@
 		<ProfilePicture />
 		<div class="flex flex-col items-center gap-2">
 			<ProfileCard />
+			<QuaverStats />
 			<AccountsCard />
 			<Credits />
 		</div>
