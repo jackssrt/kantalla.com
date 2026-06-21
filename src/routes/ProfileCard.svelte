@@ -6,8 +6,9 @@
 <Card>
 	<h1 class="text-8xl font-bold">
 		{#each "Kantalla".split("") as letter, i (i)}
-			<span class="inline-block animate-fade-in opacity-0" style="animation-delay: {i * 100}ms"
-				>{letter}</span
+			<span
+				class="inline-block animate-fade-in opacity-0 drop-shadow"
+				style="animation-delay: {i * 100}ms">{letter}</span
 			>
 		{/each}
 	</h1>
