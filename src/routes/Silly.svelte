@@ -27,7 +27,7 @@
 >
 	<audio src={boop1} bind:this={audio1}></audio>
 	<audio src={boop2} bind:this={audio2}></audio>
-	<span class="text-4xl transition-opacity" style="opacity: 0%;" bind:this={counter}
+	<span class="text-4xl text-purple-500 transition-opacity" style="opacity: 0%;" bind:this={counter}
 		>{count.current}</span
 	>
 	<enhanced:img

@@ -104,8 +104,8 @@
 
 {#snippet field(field: string, value: string)}
 	<div class="flex w-32 flex-col">
-		<div class="text-sm">{field}</div>
-		<div>{value}</div>
+		<div class="text-sm text-purple-500">{field}</div>
+		<div class="text-purple-500">{value}</div>
 	</div>
 {/snippet}
 
@@ -136,7 +136,7 @@
 				"In a multiplayer lobby"
 			])
 			.otherwise(() => ["bg-purple-100/50", "Unknown status"])}
-		<h2 class="flex w-full justify-between text-xl">
+		<h2 class="flex w-full justify-between text-xl text-purple-500">
 			Quaver stats :3
 			<div class="flex items-center gap-2 self-end">
 				<div>{content}</div>

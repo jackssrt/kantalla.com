@@ -3,13 +3,13 @@
 </script>
 
 <div
-	class="max-w-48 text-sm text-white/50 transition-colors hover:text-white xl:fixed xl:bottom-2 xl:left-2 xl:max-w-md"
+	class="max-w-48 text-sm text-purple-500/50 transition-colors hover:text-purple-500 xl:fixed xl:bottom-2 xl:left-2 xl:max-w-md"
 >
 	<p class="group">
 		<ExternalLink href="https://github.com/jackssrt/kantalla.com">Open source</ExternalLink>, <ExternalLink
 			href="https://github.com/jackssrt/kantalla.com/blob/main/LICENSE">copyleft GPLv3</ExternalLink
-		>, made with <span class="group-hover:text-purple-400">love</span> by <ExternalLink
-			href="https://jackssrt.com/bio">jackssrt</ExternalLink
+		>, made with <span>love</span> by <ExternalLink href="https://jackssrt.com/bio"
+			>jackssrt</ExternalLink
 		> &lt;3<br />
 	</p>
 
