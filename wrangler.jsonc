@@ -17,11 +17,6 @@
 			"enabled": true,
 			"pattern": "kantalla.com"
 		},
-		{
-			"custom_domain": true,
-			"enabled": true,
-			"pattern": "www.kantalla.com"
-		}
 	],
 	"account_id": "a00545db7960452c3b9bf8118c58bf29"
 }
