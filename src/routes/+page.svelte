@@ -1,10 +1,13 @@
-<script>
+<script lang="ts">
 	import ProfileCard from "./ProfileCard.svelte";
 	import AccountsCard from "./AccountsCard.svelte";
 	import ProfilePicture from "./ProfilePicture.svelte";
 	import Silly from "./Silly.svelte";
 	import Credits from "./Credits.svelte";
 	import QuaverStats from "./QuaverStats.svelte";
+	import type { PageProps } from "./$types";
+
+	const { data }: PageProps = $props();
 </script>
 
 <div class="mx-2 grid min-h-dvh place-items-center">
@@ -12,7 +15,7 @@
 		<ProfilePicture />
 		<div class="flex flex-col items-center gap-2">
 			<ProfileCard />
-			<QuaverStats />
+			<QuaverStats user={data.quaver} />
 			<AccountsCard />
 			<Credits />
 		</div>

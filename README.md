@@ -1,4 +1,4 @@
 # [kantalla.com](https://kantalla.com)
 
-bio website in svelte using sveltekit. made in a day.
-generates a static site which is then hosted on github pages.
+bio website in svelte using sveltekit. originally made in a day.
+hosted on cloudflare workers.

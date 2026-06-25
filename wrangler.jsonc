@@ -1,0 +1,27 @@
+{
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "kantalla-com",
+	"main": ".svelte-kit/cloudflare/_worker.js",
+	"compatibility_flags": ["nodejs_als"],
+	"compatibility_date": "2026-06-19",
+	"assets": {
+		"binding": "ASSETS",
+		"directory": ".svelte-kit/cloudflare"
+	},
+	"build": {
+		"command": "bun run build"
+	},
+	"routes": [
+		{
+			"custom_domain": true,
+			"enabled": true,
+			"pattern": "kantalla.com"
+		},
+		{
+			"custom_domain": true,
+			"enabled": true,
+			"pattern": "www.kantalla.com"
+		}
+	],
+	"account_id": "a00545db7960452c3b9bf8118c58bf29"
+}
