@@ -9,14 +9,14 @@
 		"directory": ".svelte-kit/cloudflare"
 	},
 	"build": {
-		"command": "bun run build"
+		"command": "vite build"
 	},
 	"routes": [
 		{
 			"custom_domain": true,
 			"enabled": true,
 			"pattern": "kantalla.com"
-		},
+		}
 	],
 	"account_id": "a00545db7960452c3b9bf8118c58bf29"
 }
