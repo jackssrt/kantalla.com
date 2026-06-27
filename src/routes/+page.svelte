@@ -21,4 +21,12 @@
 		</div>
 	</div>
 	<Silly />
+	<enhanced:img
+		src="$lib/assets/right.png"
+		class="absolute right-0 bottom-0 -z-10 h-2/3 w-auto opacity-0 transition-opacity xl:opacity-100"
+	></enhanced:img>
+	<enhanced:img
+		src="$lib/assets/left.png"
+		class="absolute bottom-0 left-0 -z-10 h-full w-auto opacity-0 transition-opacity xl:opacity-100"
+	></enhanced:img>
 </div>
