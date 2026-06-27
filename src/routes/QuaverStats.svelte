@@ -29,15 +29,18 @@
 
 <Card>
 	{@const stats = user.stats_keys4}
-	{@const [iconColor, content] = match(user.client_status)
+	{@const [iconColor, content, item] = match(user.client_status)
+		.returnType<[string, string] | [string, string, string]>()
 		.with(null, () => ["bg-purple-100/50", "Offline"])
 		.with({ status: STATUSES.playing, content: P.select() }, (content) => [
 			"bg-green-500",
-			`Playing ${content}`
+			"Playing",
+			content
 		])
 		.with({ status: STATUSES.editing, content: P.select() }, (content) => [
 			"bg-yellow-500",
-			`Editing ${content}`
+			"Editing",
+			content
 		])
 		.with({ status: STATUSES.pickingSong }, () => ["bg-purple-500", "Picking a song"])
 		.with({ status: STATUSES.paused }, () => ["bg-purple-500", "Paused"])
@@ -45,13 +48,20 @@
 		.with({ status: STATUSES.multiplayerMenu }, () => ["bg-purple-500", "In the multiplayer menu"])
 		.with({ status: STATUSES.multiplayerLobby }, () => ["bg-purple-500", "In a multiplayer lobby"])
 		.otherwise(() => ["bg-purple-100/50", "Unknown status"])}
-	<h2 class="flex w-full justify-between text-xl text-purple-500">
-		Quaver stats :3
-		<div class="flex items-center gap-2 self-end">
-			<div>{content}</div>
-			<div class={["h-4 w-4 rounded", iconColor]}></div>
-		</div>
-	</h2>
+	<div class="flex w-full flex-col">
+		<h2 class="flex w-full justify-between text-xl text-purple-500">
+			Quaver stats :3
+			<div class="flex items-center gap-2 self-end">
+				<div>{content}</div>
+				<div class={["h-4 w-4 rounded", iconColor]}></div>
+			</div>
+		</h2>
+		{#if item}
+			<span class="p-1 text-purple-500">
+				{item}
+			</span>
+		{/if}
+	</div>
 	<div class="grid grid-cols-3">
 		<!-- eslint-disable @typescript-eslint/no-confusing-void-expression -->
 		{@render field("Global rank", formatRank(stats.ranks.global))}
