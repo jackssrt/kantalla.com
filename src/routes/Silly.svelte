@@ -33,6 +33,7 @@
 	<enhanced:img
 		src="$lib/assets/dbdemoteheart.png"
 		class="h-auto w-full select-none"
+		draggable="false"
 		alt="custom heart emoji"
 	></enhanced:img>
 </button>

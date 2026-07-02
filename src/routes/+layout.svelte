@@ -33,7 +33,8 @@ Mainly playing games or yapping :D"
 </svelte:head>
 <enhanced:img
 	src="$lib/assets/kantallabanner.png?w=1920;1280;640;400"
-	class="fixed -z-10 h-dvh w-dvw object-cover brightness-75"
+	class="fixed -z-10 h-dvh w-dvw object-cover brightness-75 select-none"
+	draggable="false"
 	alt="background"
 	sizes="(min-width: 1280px) 1920px, (min-width: 640px) 1280px, (min-width: 400px) 640px, 400px"
 ></enhanced:img>
