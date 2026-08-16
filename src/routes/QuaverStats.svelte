@@ -31,7 +31,7 @@
 	{@const stats = user.stats_keys4}
 	{@const [iconColor, content, item] = match(user.client_status)
 		.returnType<[string, string] | [string, string, string]>()
-		.with(null, () => ["bg-purple-100/50", "Offline"])
+		.with(null, () => ["bg-purple-800/50", "Offline"])
 		.with({ status: STATUSES.playing, content: P.select() }, (content) => [
 			"bg-green-500",
 			"Playing",
@@ -47,7 +47,7 @@
 		.with({ status: STATUSES.menu }, () => ["bg-purple-500", "In the menu"])
 		.with({ status: STATUSES.multiplayerMenu }, () => ["bg-purple-500", "In the multiplayer menu"])
 		.with({ status: STATUSES.multiplayerLobby }, () => ["bg-purple-500", "In a multiplayer lobby"])
-		.otherwise(() => ["bg-purple-100/50", "Unknown status"])}
+		.otherwise(() => ["bg-purple-800/50", "Unknown status"])}
 	<div class="flex w-full flex-col">
 		<h2 class="flex w-full justify-between text-xl text-purple-500">
 			Quaver stats :3
