@@ -19,6 +19,6 @@
 	</div>
 	<p class="text-center text-2xl text-purple-500">
 		I help however I can<br />Mainly playing games or yapping<br />
-		More coming soon™<br /><br />Femboy<br />18
+		More coming soon™<br /><br />18
 	</p>
 </Card>
