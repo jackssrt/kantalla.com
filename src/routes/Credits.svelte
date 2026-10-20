@@ -8,9 +8,7 @@
 	<p class="group">
 		<ExternalLink href="https://github.com/jackssrt/kantalla.com">Open source</ExternalLink>, <ExternalLink
 			href="https://github.com/jackssrt/kantalla.com/blob/main/LICENSE">copyleft GPLv3</ExternalLink
-		>, made with <span>love</span> by <ExternalLink href="https://jackssrt.com/bio"
-			>jackssrt</ExternalLink
-		> &lt;3<br />
+		>
 	</p>
 
 	<details>
